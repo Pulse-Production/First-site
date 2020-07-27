@@ -79,24 +79,241 @@ nav #icon {
 
 /* -----Main----- */
 
-.main_container {
-    width: 100%;
+.resume {
+    width: 60vw;
+    height: auto;
     margin: 0 auto;
     padding: 30px 20px;
     color: white;
+    display: flex;
 }
 
+.semi-bold {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.resume .resume_left {
+    width: 20vw;
+    background-color: orange;
+}
+
+.resume .resume_left .profile {
+    width: 100%;
+    height: 280px;
+}
+
+.resume .resume_left .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.resume .resume_left .content {
+    padding: 0 20px;
+}
+
+.resume .title {
+    margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+    color: #ffffff;
+}
+
+.resume .resume_left .regular {
+    color: white;
+}
+
+.resume .resume_item {
+    padding: 20px 0;
+    border-bottom: 2px solid rgb(253, 204, 114);
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+    border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resume .resume_left ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.resume .resume_left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.resume .data p{
+    margin-bottom: 5px;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume .resume_right {
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 25px;
+}
+
+.resume .resume_right .bold {
+    color: orange;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.resume .resume_right ul li {
+    position: relative;
+}
+
+.resume .resume_right ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+    margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: orange;
+}
+
+.resume .resume_right .resume_hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    position: relative;
+    color: orange;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+    font-size: 25px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -126px;
+    width: 126px;
+    height: 2px;
+    background: orange;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+    display: none;
+}
+
+/* 
 .main {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     text-align: center;
 }
 
-.main h3 {
-    
+.main .Profile {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Work_Experience {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Internship {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Education {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Skills {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Certifications {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.main .Hobbies {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.border_bottom {
     border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+.main h3 {
+    padding-bottom: 5px;    
 }
 
 .main h1 {
@@ -106,13 +323,13 @@ nav #icon {
 .main p {
     margin-top: 16px;
     line-height: 24px;
-}
+} */
 /* -----End Of Main----- */
 
 /* -----Footer----- */
 
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
